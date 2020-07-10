@@ -1,0 +1,6 @@
+module Pods_Insights_Trimble_Enterprise {
+  umbrella header "Pods-Insights-Trimble-Enterprise-umbrella.h"
+
+  export *
+  module * { export * }
+}

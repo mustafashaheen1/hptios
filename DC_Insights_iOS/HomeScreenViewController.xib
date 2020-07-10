@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeScreenViewController">
+            <connections>
+                <outlet property="address" destination="Xok-FY-clv" id="Mby-Uc-sPu"/>
+                <outlet property="dividerButton" destination="UKq-vy-XGR" id="N7K-4p-h1C"/>
+                <outlet property="emailAddress" destination="xam-F7-an1" id="tcC-5K-vHQ"/>
+                <outlet property="logoutButton" destination="kX2-qq-djO" id="krV-cd-Qge"/>
+                <outlet property="savedInspDividerButton" destination="tqK-7A-lxM" id="UBC-j9-ESr"/>
+                <outlet property="savedInspectionsButton" destination="TL4-3a-LCt" id="jZc-fo-fho"/>
+                <outlet property="selectLocationButton" destination="VfH-qU-9h7" id="EG1-Ja-mvx"/>
+                <outlet property="showCompletedInspectionsButton" destination="Jbl-Yh-EFM" id="cSt-fd-7o3"/>
+                <outlet property="startNewInspectionButton" destination="Ki5-IA-aif" id="i6C-Ud-nWK"/>
+                <outlet property="storeName" destination="7zW-cH-rgT" id="hcE-FH-JcW"/>
+                <outlet property="updateLocationButton" destination="bRL-7v-tJB" id="dtd-ac-vmt"/>
+                <outlet property="view" destination="1" id="0hq-7A-3UN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleAspectFit" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Ki5-IA-aif">
+                    <rect key="frame" x="20" y="322" width="280" height="53"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.62352943419999995" green="0.60392159219999997" blue="0.56078433989999998" alpha="1" colorSpace="deviceRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="Start New"/>
+                    <connections>
+                        <action selector="startNewInspectionButtonTouched:" destination="-1" eventType="touchUpInside" id="DUr-0V-QTw"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="cBR-0s-dMr">
+                    <rect key="frame" x="0.0" y="383" width="320" height="2"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.62352943419999995" green="0.60392159219999997" blue="0.56078433989999998" alpha="1" colorSpace="deviceRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="M2S-ai-g76">
+                    <rect key="frame" x="0.0" y="177" width="320" height="2"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.62352943419999995" green="0.60392159219999997" blue="0.56078433989999998" alpha="1" colorSpace="deviceRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="4Kx-j3-O7e">
+                    <rect key="frame" x="0.0" y="310" width="320" height="2"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.62352943419999995" green="0.60392159219999997" blue="0.56078433989999998" alpha="1" colorSpace="deviceRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                </button>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="o7P-0R-Zbe">
+                    <rect key="frame" x="20" y="102" width="80" height="21"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.0" green="0.20000000000000001" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="admin@yottamark.com" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xam-F7-an1">
+                    <rect key="frame" x="20" y="133" width="192" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="kX2-qq-djO">
+                    <rect key="frame" x="218" y="126" width="95" height="34"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.62352943419999995" green="0.60392159219999997" blue="0.56078433989999998" alpha="1" colorSpace="deviceRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="Logout"/>
+                    <connections>
+                        <action selector="logoutButtonTouched:" destination="-1" eventType="touchUpInside" id="UIh-Qu-G21"/>
+                    </connections>
+                </button>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rDv-1l-vzq">
+                    <rect key="frame" x="20" y="196" width="80" height="21"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.0" green="0.20000000000000001" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="203 Redwood Shores, Redwood City, CA 95432" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7zW-cH-rgT">
+                    <rect key="frame" x="20" y="227" width="195" height="21"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="VfH-qU-9h7">
+                    <rect key="frame" x="218" y="191" width="95" height="43"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.62352943419999995" green="0.60392159219999997" blue="0.56078433989999998" alpha="1" colorSpace="deviceRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="Select New"/>
+                    <connections>
+                        <action selector="selectLocationButtonTouched:" destination="-1" eventType="touchUpInside" id="IS5-Bj-Dge"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="bRL-7v-tJB">
+                    <rect key="frame" x="217" y="256" width="97" height="43"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.62352943419999995" green="0.60392159219999997" blue="0.56078433989999998" alpha="1" colorSpace="deviceRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="Update"/>
+                    <connections>
+                        <action selector="updateLocationButtonTouched:" destination="-1" eventType="touchUpInside" id="V48-fZ-4ci"/>
+                    </connections>
+                </button>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Xok-FY-clv">
+                    <rect key="frame" x="20" y="249" width="192" height="32"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Jbl-Yh-EFM">
+                    <rect key="frame" x="20" y="394" width="280" height="30"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.62352943419999995" green="0.60392159219999997" blue="0.56078433989999998" alpha="1" colorSpace="deviceRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="Show Completed Inspections"/>
+                    <connections>
+                        <action selector="bringCompleteInspectionsList:" destination="-1" eventType="touchUpInside" id="oz7-bj-cDy"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="UKq-vy-XGR">
+                    <rect key="frame" x="0.0" y="433" width="322" height="2"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.62352943419999995" green="0.60392159219999997" blue="0.56078433989999998" alpha="1" colorSpace="deviceRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="TL4-3a-LCt">
+                    <rect key="frame" x="21" y="449" width="280" height="30"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.62352943419999995" green="0.60392159219999997" blue="0.56078433989999998" alpha="1" colorSpace="deviceRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="Saved Inspections"/>
+                    <connections>
+                        <action selector="savedInspectionButtonTouched:" destination="-1" eventType="touchUpInside" id="YCo-eD-Lek"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="tqK-7A-lxM">
+                    <rect key="frame" x="0.0" y="492" width="322" height="2"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.62352943419999995" green="0.60392159219999997" blue="0.56078433989999998" alpha="1" colorSpace="deviceRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                </button>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="banner.png" id="kcW-mT-MGa">
+                    <rect key="frame" x="0.0" y="13" width="320" height="76"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="mww-eB-WeS">
+                    <rect key="frame" x="2" y="95" width="320" height="2"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.62352943419999995" green="0.60392159219999997" blue="0.56078433989999998" alpha="1" colorSpace="deviceRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="banner.png" width="366" height="76"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

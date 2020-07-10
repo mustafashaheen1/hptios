@@ -1,0 +1,6 @@
+module Pods_ScanOut {
+  umbrella header "Pods-ScanOut-umbrella.h"
+
+  export *
+  module * { export * }
+}

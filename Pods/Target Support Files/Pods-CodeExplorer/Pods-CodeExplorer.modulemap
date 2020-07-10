@@ -1,0 +1,6 @@
+module Pods_CodeExplorer {
+  umbrella header "Pods-CodeExplorer-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,13 @@
+machine:
+  environment:
+    # CocoaPods versions greater than 0.34 require
+    # your terminal to be using UTF-8 encoding.
+    LANG: en_US.UTF-8
+  xcode:
+    version: "9.0"
+deployment:
+  general:
+  branches:
+    only:
+     - master # list of branches to build
+     - CircleCiSetup # or regexes

@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MissionStepPLUViewController">
+            <connections>
+                <outlet property="enterThePLULabel" destination="8OJ-HK-cQz" id="VQq-zh-NBP"/>
+                <outlet property="instructionLabel" destination="pLI-O1-DI0" id="fft-71-ajV"/>
+                <outlet property="instructionView" destination="m5u-VK-hkK" id="5Tp-25-67F"/>
+                <outlet property="missionDescription" destination="xTS-X5-rzv" id="snD-O8-rbk"/>
+                <outlet property="missionImage" destination="JJ0-9a-XU8" id="dCY-tm-i8n"/>
+                <outlet property="missionTitle" destination="8jO-X7-wP2" id="CnG-6F-nWm"/>
+                <outlet property="nextStep" destination="8PN-mM-hzU" id="gIo-h3-q8p"/>
+                <outlet property="otherTextView" destination="hdj-9B-Mcr" id="h2m-aN-GuR"/>
+                <outlet property="pluTextView" destination="RSP-v8-LE1" id="6S0-RN-DYg"/>
+                <outlet property="productZoomBackView" destination="hcK-VT-5Yx" id="EnD-vF-DJJ"/>
+                <outlet property="productZoomImageView" destination="NKd-iA-gxT" id="epH-E2-SLy"/>
+                <outlet property="productZoomLabel" destination="wHX-VK-tzc" id="jh4-9K-CmO"/>
+                <outlet property="productZoomMainView" destination="Vm9-LA-yzf" id="7x8-k3-pio"/>
+                <outlet property="productZoomView" destination="hso-3P-1n0" id="Nti-eH-XTt"/>
+                <outlet property="progressView" destination="nne-Q5-2HZ" id="Cwk-u1-vNL"/>
+                <outlet property="scrollView" destination="wds-sH-efu" id="NRM-oL-Vyl"/>
+                <outlet property="selectBrandButton" destination="l7p-Ew-5Zs" id="wnq-L4-omR"/>
+                <outlet property="selectTheBrandLabel" destination="QnL-Gy-D64" id="jz6-L4-7aF"/>
+                <outlet property="storesButton" destination="1qL-Zy-lNY" id="s6h-fR-ckj"/>
+                <outlet property="storesDescription" destination="N7p-QN-fha" id="DGA-JG-T1a"/>
+                <outlet property="view" destination="wds-sH-efu" id="Glt-Sg-a2W"/>
+                <outletCollection property="viewsToGrow" destination="Vm9-LA-yzf" id="td1-7f-B0f"/>
+                <outletCollection property="viewsToGrow" destination="hso-3P-1n0" id="vuB-4t-uvM"/>
+                <outletCollection property="viewsToGrowByHalf" destination="hso-3P-1n0" id="eMr-Rd-w8b"/>
+                <outletCollection property="dynamicViewsToShift" destination="wHX-VK-tzc" id="2CX-XU-yfx"/>
+                <outletCollection property="viewsToGrow" destination="NKd-iA-gxT" id="Epj-ed-LSn"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="wds-sH-efu">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" id="nne-Q5-2HZ" userLabel="Progress View">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="58"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="mission_progress_step_one.png" id="eZd-lF-ThG">
+                            <rect key="frame" x="15" y="12" width="290" height="40"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view autoresizesSubviews="NO" contentMode="scaleToFill" id="m5u-VK-hkK" userLabel="Instruction View">
+                    <rect key="frame" x="0.0" y="58" width="320" height="34"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Locate the product and scan the barcode" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="pLI-O1-DI0" userLabel="Instruction Label">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="32"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" id="OEE-mX-hUX" userLabel="bottom separator line">
+                            <rect key="frame" x="0.0" y="33" width="320" height="1"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.82352941180000006" green="0.80784313730000001" blue="0.7843137255" alpha="1" colorSpace="deviceRGB"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Fresh Express Spinach" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" adjustsFontSizeToFit="NO" id="8jO-X7-wP2" userLabel="Mission Title">
+                    <rect key="frame" x="10" y="100" width="300" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" minimumFontSize="10" adjustsFontSizeToFit="NO" id="xTS-X5-rzv" userLabel="Mission Description">
+                    <rect key="frame" x="10" y="121" width="300" height="45"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <string key="text">Fresh Express Spinach mission description will help your bank account and make you healthier!  And if I add more text it will wrap to 3 lines</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="at C-Town &amp; 4 more" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" adjustsFontSizeToFit="NO" id="N7p-QN-fha" userLabel="Stores Description">
+                    <rect key="frame" x="10" y="166" width="300" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" white="0.50379219890000004" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="1qL-Zy-lNY" userLabel="Stores Button">
+                    <rect key="frame" x="50" y="158" width="214" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal">
+                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="storesTouched:" destination="-1" eventType="touchUpInside" id="hg5-tI-z8A"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" id="JJ0-9a-XU8" userLabel="Mission Image">
+                    <rect key="frame" x="110" y="194" width="100" height="125"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="8PN-mM-hzU">
+                    <rect key="frame" x="37" y="403" width="246" height="37"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" image="button_next_step.png">
+                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="gotoNextStep:" destination="-1" eventType="touchUpInside" id="qvh-TV-dE6"/>
+                    </connections>
+                </button>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Enter the PLU:" textAlignment="right" lineBreakMode="tailTruncation" minimumFontSize="10" adjustsFontSizeToFit="NO" id="8OJ-HK-cQz" userLabel="Mission Title">
+                    <rect key="frame" x="20" y="329" width="129" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Select the brand:" textAlignment="right" lineBreakMode="tailTruncation" minimumFontSize="10" adjustsFontSizeToFit="NO" id="QnL-Gy-D64" userLabel="Mission Title">
+                    <rect key="frame" x="20" y="366" width="129" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="l7p-Ew-5Zs">
+                    <rect key="frame" x="157" y="362" width="126" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.64313725490196072" green="0.64313725490196072" blue="0.64313725490196072" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="SELECT BRAND">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="brandPickerSelect:" destination="-1" eventType="touchUpInside" id="9ON-pO-Cey"/>
+                    </connections>
+                </button>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" id="RSP-v8-LE1">
+                    <rect key="frame" x="157" y="323" width="126" height="29"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="12"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardType="numberPad" returnKeyType="done"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="nJq-5c-a1A"/>
+                    </connections>
+                </textView>
+                <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" id="hdj-9B-Mcr">
+                    <rect key="frame" x="175" y="434" width="135" height="38"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="12"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="0Xb-hM-BHQ"/>
+                    </connections>
+                </textView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1oU-QB-XGk">
+                    <rect key="frame" x="110" y="194" width="100" height="125"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="productImageTouched:" destination="-1" eventType="touchUpInside" id="jk5-Fs-Ibl"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <connections>
+                <outlet property="delegate" destination="-1" id="WZX-XM-ia6"/>
+            </connections>
+        </scrollView>
+        <view contentMode="scaleToFill" id="Vm9-LA-yzf" userLabel="Product Zoom Main View">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view hidden="YES" alpha="0.69999998807907104" contentMode="scaleToFill" id="hcK-VT-5Yx" userLabel="Product Zoom Backing View">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" id="hso-3P-1n0" userLabel="Product Zoom View">
+                    <rect key="frame" x="10" y="30" width="300" height="380"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="center" id="NKd-iA-gxT">
+                            <rect key="frame" x="0.0" y="0.0" width="300" height="380"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        </imageView>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontSizeToFit="NO" id="wHX-VK-tzc">
+                            <rect key="frame" x="10" y="347" width="280" height="69"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="7pa-sG-Hcb">
+                            <rect key="frame" x="269" y="10" width="21" height="20"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <state key="normal" title="Close" image="round_close_button.png">
+                                <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" image="round_close_button_pressed.png">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="productZoomCloseTouched:" destination="-1" eventType="touchUpInside" id="mZq-nV-cqd"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="button_next_step.png" width="246" height="37"/>
+        <image name="mission_progress_step_one.png" width="290" height="40"/>
+        <image name="round_close_button.png" width="21" height="20"/>
+        <image name="round_close_button_pressed.png" width="21" height="20"/>
+    </resources>
+</document>

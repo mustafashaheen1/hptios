@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GalleryViewController">
+            <connections>
+                <outlet property="collectionView" destination="UDN-rv-V0a" id="WKh-jh-zhe"/>
+                <outlet property="view" destination="l9S-Jh-9eg" id="OIc-tV-HmG"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="l9S-Jh-9eg" userLabel="GalleryViewController">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <collectionView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="UDN-rv-V0a">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="507"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="4LC-8c-1KI">
+                        <size key="itemSize" width="104" height="104"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <cells>
+                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoCell" id="Xzd-zJ-Arj" customClass="PhotoCell">
+                            <rect key="frame" x="0.0" y="0.0" width="104" height="104"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                <rect key="frame" x="0.0" y="0.0" width="104" height="104"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yh8-4t-qae">
+                                        <rect key="frame" x="0.0" y="0.0" width="104" height="104"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <constraints>
+                                <constraint firstItem="yh8-4t-qae" firstAttribute="trailing" secondItem="Xzd-zJ-Arj" secondAttribute="trailing" id="NtM-OL-X2G"/>
+                                <constraint firstItem="yh8-4t-qae" firstAttribute="bottom" secondItem="Xzd-zJ-Arj" secondAttribute="bottom" id="OQF-sA-6s7"/>
+                                <constraint firstItem="yh8-4t-qae" firstAttribute="leading" secondItem="Xzd-zJ-Arj" secondAttribute="leading" id="gue-uJ-EfX"/>
+                                <constraint firstItem="yh8-4t-qae" firstAttribute="top" secondItem="Xzd-zJ-Arj" secondAttribute="top" id="nM4-wT-Yeo"/>
+                            </constraints>
+                            <size key="customSize" width="104" height="104"/>
+                            <connections>
+                                <outlet property="photoImageView" destination="yh8-4t-qae" id="XM6-Gr-nD5"/>
+                            </connections>
+                        </collectionViewCell>
+                    </cells>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Wov-ms-oGR"/>
+                        <outlet property="delegate" destination="-1" id="xmL-cC-xFi"/>
+                    </connections>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <nil key="simulatedStatusBarMetrics"/>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
